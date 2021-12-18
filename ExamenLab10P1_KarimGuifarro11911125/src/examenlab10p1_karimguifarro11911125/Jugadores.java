@@ -12,26 +12,15 @@ package examenlab10p1_karimguifarro11911125;
 public class Jugadores {
   String nombre;
     int vida,ataque;
-    String tipo;
     public Jugadores() {
     }
 
-    public Jugadores(String nombre, int vida, int ataque, String tipo) {
+    public Jugadores(String nombre, int vida, int ataque) {
         this.nombre = nombre;
         this.vida = vida;
         this.ataque = ataque;
-        this.tipo = tipo;
+       
     }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-   
 
     public String getNombre() {
         return nombre;
@@ -41,7 +30,7 @@ public class Jugadores {
         this.nombre = nombre;
     }
 
-    public float getVida() {
+    public int getVida() {
         return vida;
     }
 
@@ -49,14 +38,14 @@ public class Jugadores {
         this.vida = vida;
     }
 
-    public float getAtaque() {
+    public int getAtaque() {
         return ataque;
     }
 
     public void setAtaque(int ataque) {
         this.ataque = ataque;
     }
-
+   
     @Override
     public String toString() {
         return nombre;
